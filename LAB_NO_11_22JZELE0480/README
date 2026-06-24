@@ -1,1 +1,8 @@
 
+Lab 11 for the Machine Learning Lab course,focusing on the design and evaluation of deep temporal architectures
+for sequential forecasting. The workflow involves developing a custom 1D Convolutional Neural Network (1D CNN)
+model using Keras/TensorFlow to capture local, shift-invariant temporal feature maps across sliding historical windows 
+of the American Electric Power (AEP) hourly energy consumption dataset, utilizing spatial max-pooling and dense layer mapping 
+for multi-step univariate forecasting, and conducting a rigorous accuracy assessment utilizing specialized regression metrics 
+including Mean Squared Error (MSE), Root Mean Squared Error (RMSE), Mean Absolute Percentage Error (MAPE),
+and Median Absolute Percentage Error (MDAPE).
