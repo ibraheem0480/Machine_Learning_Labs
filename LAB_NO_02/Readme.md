@@ -1,1 +1,2 @@
-
+The labs are designed to provide a strong foundation in data analysis, numerical computing, and data visualization by covering three of the most widely used Python libraries in data science: NumPy, Pandas, and Matplotlib.
+Each lab is organized into multiple parts and includes comprehensive Markdown explanations, well-commented code, practical examples, and step-by-step demonstrations to help beginners understand the concepts before implementing them
