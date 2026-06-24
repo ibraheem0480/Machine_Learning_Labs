@@ -1,1 +1,7 @@
 
+Lab 10 for the Machine Learning Lab course, focusing on the design, optimization, and assessment of neural network architectures 
+for predictive time-series modeling. The workflow involves constructing a multi-step univariate Multi-Layer Perceptron (MLP)
+deep learning model using Keras/TensorFlow to forecast multi-hour consumer grid demands from the American Electric Power (AEP) dataset, 
+integrating early stopping callbacks to prevent overfitting, and conducting a rigorous validation audit utilizing robust sequential
+metrics including Mean Squared Error (MSE), Root Mean Squared Error (RMSE), Mean Absolute Percentage Error (MAPE), 
+and Median Absolute Percentage Error (MDAPE).
