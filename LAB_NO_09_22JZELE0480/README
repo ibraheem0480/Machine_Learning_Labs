@@ -1,1 +1,8 @@
 
+Lab 09 (Parts 1 and 2) from the University of Engineering and Technology Peshawar (Nowshera Campus) for 
+the Machine Learning Lab course, focusing on mitigating overfitting in Computer Vision models using advanced 
+regularization techniques. The workflow covers the configuration of dynamic image augmentation pipelines using Keras 
+ImageDataGenerator to artificially expand visual training distributions and enhance model variance (Part 1), 
+which is followed by the implementation of a comprehensive comparative evaluation strategy that assesses
+multi-class Convolutional Neural Networks (CNNs) across key accuracy thresholds and validation metrics using serialized 
+model check-pointing, confusion matrices, and precision-recall statistical reports (Part 2).
