@@ -1,1 +1,7 @@
 
+Lab 08 for the Machine Learning Lab course, focusing on building, optimizing, and evaluating deep learning models 
+for computer vision tasks. The workflow involves developing a custom Convolutional Neural Network (CNN) architecture 
+using Keras/TensorFlow, integrating sequential convolutional filtering, batch normalization, max-pooling, and dropout
+regularization layers to perform binary and multi-class classification on plant disease imagery, and thoroughly auditing
+the resulting model's classification dynamics using comprehensive evaluation matrices such as classification reports, precision,
+recall, and accuracy tracking scores.
