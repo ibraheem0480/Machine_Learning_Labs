@@ -1,7 +1,0 @@
-Lab 04 (Parts 1 and 2) for the Machine Learning Lab course, focusing on feature extraction 
-and advanced correlation analytics for the American Electric Power (AEP) hourly energy consumption dataset.
-The workflow systematically expands the dataset by extracting core time features, including day of the year, hour, month,
-day of the week, weekends, and dummy-encoded seasonal variables representing winter, spring, summer, and fall to capture 
-cyclical consumption behaviors (Part 1). It then subjects these engineered characteristics to a multi-method statistical audit,
-utilizing Pearson, Kendall, and Spearman rank correlation coefficients to evaluate linear, non-linear, and monotonic relationships
-between time, seasonal shifts, and power grid load variations (Part 2).
