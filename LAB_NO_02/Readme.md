@@ -43,7 +43,7 @@ Upon successful completion of this laboratory, students will be able to:
 
 ## 📌 Exercise 2.1 — NumPy Fundamentals
 
-**Notebook:** `Lab_2.1_22jzele0467.ipynb`
+**Notebook:** `Lab_02_Part_01_22JZELE0480.ipynb`
 
 ### Topics Covered
 
@@ -64,7 +64,7 @@ Develop a strong understanding of numerical arrays, which serve as the primary d
 
 ## 📌 Exercise 2.2 — Data Analysis with Pandas
 
-**Notebook:** `Lab_2.2_22jzele0467.ipynb`
+**Notebook:** `Lab_02_Part_02_22JZELE0480.ipynb`
 
 ### Topics Covered
 
@@ -85,7 +85,7 @@ Learn how real-world datasets are loaded, explored, and prepared before model de
 
 ## 📌 Exercise 2.3 — Data Visualization using Matplotlib
 
-**Notebook:** `Lab_2.3_22jzele0467.ipynb`
+**Notebook:** `Lab_02_Part_03_22JZELE0480.ipynb`
 
 ### Topics Covered
 
@@ -109,9 +109,9 @@ Visualize datasets effectively to discover patterns, relationships, and trends b
 ```text
 Lab-02/
 │
-├── Lab_2.1_22jzele0467.ipynb
-├── Lab_2.2_22jzele0467.ipynb
-├── Lab_2.3_22jzele0467.ipynb
+├──Lab_02_Part_01_22JZELE0480.ipynb
+├──Lab_02_Part_02_22JZELE0480.ipynb
+├──Lab_02_Part_03_22JZELE0480.ipynb
 │
 └── README.md
 ```
@@ -120,17 +120,7 @@ Lab-02/
 
 # 🚀 Getting Started
 
-### Clone the Repository
 
-```bash
-git clone https://github.com/your-username/Machine-Learning-Labs.git
-```
-
-Navigate to the Lab 02 directory:
-
-```bash
-cd Machine-Learning-Labs/Lab-02
-```
 
 ---
 
@@ -208,7 +198,7 @@ Python Basics
 | Item | Details |
 |------|---------|
 | Course | Machine Learning Laboratory |
-| Lab | Lab 02 |
+| Lab | Lab_02__22JZELE0480 |
 | Topic | Introduction to Data Analysis Libraries |
 | Institution | UET Peshawar – Nowshera Campus |
 
@@ -216,9 +206,9 @@ Python Basics
 
 # 👨‍💻 Author
 
-**DANIYAL BASHARAT**
+**IBRAHEEM KHAN**
 
-**Registration Number:** 22JZELE0467
+**Registration Number:** 22JZELE0480
 
 **Department:** Electrical Engineering
 
