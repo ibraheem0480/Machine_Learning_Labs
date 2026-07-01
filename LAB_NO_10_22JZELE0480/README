@@ -1,7 +1,249 @@
+# 🧠 Lab 10 – Multi-Layer Perceptron (MLP) for Time-Series Forecasting
 
-Lab 10 for the Machine Learning Lab course, focusing on the design, optimization, and assessment of neural network architectures 
-for predictive time-series modeling. The workflow involves constructing a multi-step univariate Multi-Layer Perceptron (MLP)
-deep learning model using Keras/TensorFlow to forecast multi-hour consumer grid demands from the American Electric Power (AEP) dataset, 
-integrating early stopping callbacks to prevent overfitting, and conducting a rigorous validation audit utilizing robust sequential
-metrics including Mean Squared Error (MSE), Root Mean Squared Error (RMSE), Mean Absolute Percentage Error (MAPE), 
-and Median Absolute Percentage Error (MDAPE).
+> **Machine Learning Laboratory** | Building a Multi-Layer Perceptron (MLP) model for electricity demand forecasting using deep learning.
+
+---
+
+## 📖 Overview
+
+Time-series forecasting plays a vital role in predicting future values based on historical observations. In this laboratory, a **Multi-Layer Perceptron (MLP)** is implemented to forecast electricity demand using the preprocessed **AEP Hourly Electricity Demand** dataset prepared in previous laboratories.
+
+The MLP model learns nonlinear relationships from historical time-series windows and predicts future demand values. The laboratory demonstrates the complete deep learning workflow, including data loading, model construction, training, validation, checkpointing, prediction, and performance evaluation.
+
+The laboratory consists of a single Jupyter notebook implementing the complete forecasting pipeline.
+
+---
+
+## 🎯 Learning Outcomes
+
+After completing this laboratory, students will be able to:
+
+- Understand the workflow of deep learning for time-series forecasting
+- Prepare sequential input windows for neural networks
+- Build an MLP architecture using TensorFlow/Keras
+- Configure optimizers, loss functions, and evaluation metrics
+- Train and validate deep learning models
+- Use callbacks for checkpointing and monitoring training
+- Generate predictions on unseen test data
+- Evaluate forecasting performance using regression metrics
+- Interpret forecasting results for energy demand prediction
+
+---
+
+# 🛠 Software & Libraries
+
+| Category | Tools |
+|-----------|-------|
+| Programming Language | Python |
+| Development Environment | Jupyter Notebook |
+| Data Processing | NumPy, Pandas |
+| Deep Learning Framework | TensorFlow, Keras |
+| Model Type | Multi-Layer Perceptron (MLP) |
+| Layers | Flatten, Dense |
+| Optimization | Adam, SGD |
+| Callbacks | ModelCheckpoint |
+| Evaluation Metrics | MAE, MSE, RMSE, R² Score, Explained Variance |
+| File Handling | Pickle, CSV |
+
+---
+
+# 📚 Laboratory Exercise
+
+## 📌 Exercise 10 — Multi-Layer Perceptron for Time-Series Forecasting
+
+**Notebook:** `Lab_10_22jzele0480.ipynb`
+
+### Topics Covered
+
+- Importing TensorFlow/Keras libraries
+- Loading training, validation, and testing datasets
+- Defining input time steps and feature dimensions
+- Building an MLP architecture using:
+  - Flatten Layer
+  - Dense Hidden Layers
+  - Output Layer
+- Configuring optimizer and loss function
+- Setting up ModelCheckpoint callbacks
+- Training the MLP model
+- Monitoring training and validation history
+- Predicting future electricity demand
+- Evaluating forecasting performance
+
+**Learning Focus**
+
+Develop a deep learning forecasting model capable of learning nonlinear relationships from historical electricity demand data and generating accurate future predictions.
+
+---
+
+# 🔍 Core Deep Learning Concepts
+
+## 📌 Multi-Layer Perceptron (MLP)
+
+A Multi-Layer Perceptron is a feed-forward neural network composed of fully connected (**Dense**) layers.
+
+The network receives historical time-series observations as input and learns nonlinear relationships to predict future values.
+
+---
+
+## 📌 Time-Series Forecasting
+
+Time-series forecasting uses previous observations to estimate future values.
+
+The forecasting model is trained using historical electricity demand data organized into fixed-length input windows.
+
+---
+
+## 📌 Model Checkpointing
+
+Model checkpointing automatically saves the best-performing model during training based on validation performance.
+
+This prevents overfitting and preserves the most accurate model.
+
+---
+
+## 📌 Forecast Evaluation
+
+Model performance is evaluated using common regression metrics, including:
+
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- Coefficient of Determination (R² Score)
+- Explained Variance Score
+
+---
+
+# 📂 Directory Structure
+
+```text
+Lab-10/
+│
+├── Lab_10_22jzele0480.ipynb
+├── train.csv
+├── validation.csv
+├── test.csv
+├── AEP_scaler.pkl
+│
+└── README.md
+```
+
+
+
+---
+
+### Install Required Packages
+
+```bash
+pip install numpy pandas scikit-learn tensorflow keras h5py
+```
+
+---
+
+### Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Run the notebook sequentially to train and evaluate the MLP forecasting model.
+
+---
+
+# 📌 Skills Developed
+
+- Time-Series Forecasting
+- Deep Learning
+- Multi-Layer Perceptron (MLP)
+- TensorFlow & Keras
+- Sequential Data Processing
+- Model Training
+- Model Checkpointing
+- Training History Analysis
+- Regression Performance Evaluation
+- Energy Demand Prediction
+
+---
+
+# 🌍 Practical Applications
+
+The forecasting techniques developed in this laboratory are widely used in:
+
+- ⚡ Electricity Demand Forecasting
+- 🏙 Smart Grid Analytics
+- 📈 Energy Consumption Prediction
+- 🏭 Industrial Process Forecasting
+- 🌦 Weather-Based Forecasting
+- 📊 Financial Time-Series Analysis
+- 🔧 Predictive Maintenance
+- 🤖 AI-Based Forecasting Systems
+
+---
+
+# 📈 Forecasting Workflow
+
+```text
+Historical Time-Series Data
+            │
+            ▼
+Input Window Generation
+            │
+            ▼
+Multi-Layer Perceptron (MLP)
+            │
+            ▼
+Model Training
+            │
+            ▼
+Prediction
+            │
+            ▼
+Performance Evaluation
+(MAE • MSE • RMSE • R²)
+```
+
+---
+
+# 🎓 Course Information
+
+| Item | Details |
+|------|---------|
+| Course | Machine Learning Laboratory |
+| Lab | Lab 10 |
+| Topic | Multi-Layer Perceptron (MLP) for Time-Series Forecasting |
+| Institution | UET Peshawar – Nowshera Campus |
+
+---
+
+# 👨‍💻 Author
+
+**IBRAHEEM KHAN**
+
+**Registration Number:** 22JZELE0480
+
+**Department:** Electrical Engineering
+
+**Course:** Machine Learning Laboratory
+
+**Supervisor:** Engr. Irshad Ullah
+
+**Institution:** University of Engineering & Technology (UET) Peshawar – Nowshera Campus
+
+---
+
+# 📄 Academic Note
+
+This laboratory was completed as part of the **Machine Learning Laboratory** course to develop practical skills in applying Multi-Layer Perceptron (MLP) networks for time-series forecasting. The implementation provides a foundation for understanding deep learning-based forecasting techniques before exploring more advanced sequential models such as Convolutional Neural Networks (CNNs) and Long Short-Term Memory (LSTM) networks.
+
+---
+
+# 📜 License
+
+This project is intended for **educational and research purposes**.
+
+You are welcome to use, modify, and extend the material for academic learning while providing appropriate credit to the original author.
+
+---
+
+## ⭐ Support
+
+If you found this laboratory helpful, consider giving the repository a **Star ⭐** on GitHub.
