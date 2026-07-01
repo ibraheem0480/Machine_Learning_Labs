@@ -4,7 +4,7 @@
 
 ---
 
-## 📖 Overview
+ ## 📖 Overview
 
 Deep learning models often require large and diverse datasets to achieve high performance. When training data is limited, **image augmentation** provides an effective solution by generating transformed versions of existing images, allowing the model to learn more robust and generalized features.
 
