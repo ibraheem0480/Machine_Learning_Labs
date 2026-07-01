@@ -1,8 +1,249 @@
+# 🌊 Lab 11 – One-Dimensional Convolutional Neural Network (1D CNN) for Time-Series Forecasting
 
-Lab 11 for the Machine Learning Lab course,focusing on the design and evaluation of deep temporal architectures
-for sequential forecasting. The workflow involves developing a custom 1D Convolutional Neural Network (1D CNN)
-model using Keras/TensorFlow to capture local, shift-invariant temporal feature maps across sliding historical windows 
-of the American Electric Power (AEP) hourly energy consumption dataset, utilizing spatial max-pooling and dense layer mapping 
-for multi-step univariate forecasting, and conducting a rigorous accuracy assessment utilizing specialized regression metrics 
-including Mean Squared Error (MSE), Root Mean Squared Error (RMSE), Mean Absolute Percentage Error (MAPE),
-and Median Absolute Percentage Error (MDAPE).
+> **Machine Learning Laboratory** | Forecasting electricity demand using a One-Dimensional Convolutional Neural Network (1D CNN).
+
+---
+
+## 📖 Overview
+
+Convolutional Neural Networks (CNNs) are not only effective for image processing but also powerful for analyzing sequential and time-series data. This laboratory introduces the implementation of a **One-Dimensional Convolutional Neural Network (1D CNN)** for forecasting electricity demand using the preprocessed **AEP Hourly Electricity Demand** dataset.
+
+Unlike a Multi-Layer Perceptron (MLP), a 1D CNN can automatically extract meaningful local temporal patterns from sequential data through convolutional operations. This enables the model to capture short-term dependencies and improve forecasting performance.
+
+The laboratory consists of a single Jupyter notebook demonstrating the complete workflow for building, training, and evaluating a 1D CNN forecasting model.
+
+---
+
+## 🎯 Learning Outcomes
+
+After completing this laboratory, students will be able to:
+
+- Understand the fundamentals of 1D Convolutional Neural Networks
+- Prepare sequential input data for CNN models
+- Design a Conv1D-based forecasting architecture
+- Configure convolutional, pooling, dropout, and dense layers
+- Train and validate deep learning models
+- Apply callbacks for model checkpointing
+- Generate predictions on unseen time-series data
+- Evaluate forecasting performance using regression metrics
+- Compare CNN-based forecasting with traditional neural networks
+
+---
+
+# 🛠 Software & Libraries
+
+| Category | Tools |
+|-----------|-------|
+| Programming Language | Python |
+| Development Environment | Jupyter Notebook |
+| Data Processing | NumPy, Pandas |
+| Deep Learning Framework | TensorFlow, Keras |
+| Model Type | One-Dimensional CNN (1D CNN) |
+| Layers | Conv1D, MaxPooling1D, Dropout, Flatten, Dense |
+| Optimization | Adam, SGD |
+| Callbacks | ModelCheckpoint |
+| Evaluation Metrics | MAE, MSE, RMSE, R² Score, Explained Variance |
+| File Handling | Pickle, CSV |
+
+---
+
+# 📚 Laboratory Exercise
+
+## 📌 Exercise 11 — 1D CNN for Time-Series Forecasting
+
+**Notebook:** `Lab_NO_11_22JZELE0480.ipynb`
+
+### Topics Covered
+
+- Importing TensorFlow/Keras libraries
+- Loading training, validation, and testing datasets
+- Defining input shape using time steps and features
+- Building a 1D CNN architecture using:
+  - Conv1D Layers
+  - MaxPooling1D Layers
+  - Dropout Layers
+  - Flatten Layer
+  - Dense Layers
+- Compiling the CNN model
+- Configuring ModelCheckpoint callbacks
+- Training the model
+- Monitoring training and validation performance
+- Predicting future electricity demand
+- Evaluating forecasting performance using regression metrics
+
+**Learning Focus**
+
+Develop a 1D CNN model capable of automatically extracting temporal features from sequential data for accurate electricity demand forecasting.
+
+---
+
+# 🔍 Core Deep Learning Concepts
+
+## 📌 One-Dimensional Convolutional Neural Network (1D CNN)
+
+A 1D CNN applies convolutional filters along the time dimension to identify meaningful temporal patterns within sequential data.
+
+Unlike traditional fully connected networks, Conv1D layers automatically learn local dependencies without manual feature engineering.
+
+---
+
+## 📌 Sequential Feature Extraction
+
+Convolutional filters scan across historical observations to detect recurring trends and local patterns that improve forecasting accuracy.
+
+---
+
+## 📌 Model Checkpointing
+
+During training, the best-performing model is automatically saved based on validation performance using TensorFlow/Keras callbacks.
+
+---
+
+## 📌 Forecast Evaluation
+
+Model performance is evaluated using several regression metrics, including:
+
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- Coefficient of Determination (R² Score)
+- Explained Variance Score
+
+---
+
+# 📂 Directory Structure
+
+```text
+Lab-11/
+│
+├── Lab__NO_11_22ZJELE0480.ipynb
+├── train.csv
+├── validation.csv
+├── test.csv
+├── AEP_scaler.pkl
+│
+└── README.md
+```
+
+
+---
+
+### Install Required Packages
+
+```bash
+pip install numpy pandas scikit-learn tensorflow keras h5py
+```
+
+---
+
+### Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Run the notebook sequentially to train and evaluate the 1D CNN forecasting model.
+
+---
+
+# 📌 Skills Developed
+
+- Time-Series Forecasting
+- One-Dimensional CNN (Conv1D)
+- Sequential Data Processing
+- TensorFlow & Keras
+- Deep Learning Model Design
+- Model Training
+- Dropout Regularization
+- Model Checkpointing
+- Forecast Performance Evaluation
+- Energy Demand Prediction
+
+---
+
+# 🌍 Practical Applications
+
+The techniques demonstrated in this laboratory are widely used in:
+
+- ⚡ Electricity Demand Forecasting
+- 🏙 Smart Grid Analytics
+- 📈 Energy Consumption Prediction
+- 🏭 Industrial Monitoring
+- 🌦 Weather Forecasting
+- 📊 Financial Time-Series Analysis
+- 🔧 Predictive Maintenance
+- 🤖 AI-Based Forecasting Systems
+
+---
+
+# 📈 Forecasting Workflow
+
+```text
+Historical Time-Series Data
+            │
+            ▼
+Input Window Generation
+            │
+            ▼
+1D Convolutional Neural Network
+            │
+            ▼
+Temporal Feature Extraction
+            │
+            ▼
+Model Training
+            │
+            ▼
+Prediction
+            │
+            ▼
+Performance Evaluation
+(MAE • MSE • RMSE • R²)
+```
+
+---
+
+# 🎓 Course Information
+
+| Item | Details |
+|------|---------|
+| Course | Machine Learning Laboratory |
+| Lab | Lab 11 |
+| Topic | One-Dimensional CNN for Time-Series Forecasting |
+| Institution | UET Peshawar – Nowshera Campus |
+
+---
+
+# 👨‍💻 Author
+
+**IBRAHEEM KHAN**
+
+**Registration Number:** 22JZELE0480
+
+**Department:** Electrical Engineering
+
+**Course:** Machine Learning Laboratory
+
+**Supervisor:** Engr. Irshad Ullah
+
+**Institution:** University of Engineering & Technology (UET) Peshawar – Nowshera Campus
+
+---
+
+# 📄 Academic Note
+
+This laboratory was completed as part of the **Machine Learning Laboratory** course to develop practical skills in applying One-Dimensional Convolutional Neural Networks (1D CNNs) for time-series forecasting. The techniques introduced in this lab demonstrate how convolutional architectures can effectively learn temporal patterns from sequential data, providing a strong foundation for more advanced sequence models such as Long Short-Term Memory (LSTM) networks.
+
+---
+
+# 📜 License
+
+This project is intended for **educational and research purposes**.
+
+You are welcome to use, modify, and extend the material for academic learning while providing appropriate credit to the original author.
+
+---
+
+## ⭐ Support
+
+If you found this laboratory helpful, consider giving the repository a **Star ⭐** on GitHub.
