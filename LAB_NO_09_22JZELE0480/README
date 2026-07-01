@@ -1,8 +1,261 @@
+# 🖼️ Lab 09 – Image Data Augmentation & CNN Generalization
 
-Lab 09 (Parts 1 and 2) from the University of Engineering and Technology Peshawar (Nowshera Campus) for 
-the Machine Learning Lab course, focusing on mitigating overfitting in Computer Vision models using advanced 
-regularization techniques. The workflow covers the configuration of dynamic image augmentation pipelines using Keras 
-ImageDataGenerator to artificially expand visual training distributions and enhance model variance (Part 1), 
-which is followed by the implementation of a comprehensive comparative evaluation strategy that assesses
-multi-class Convolutional Neural Networks (CNNs) across key accuracy thresholds and validation metrics using serialized 
-model check-pointing, confusion matrices, and precision-recall statistical reports (Part 2).
+> **Machine Learning Laboratory** | Enhancing image classification performance through data augmentation and Convolutional Neural Networks (CNNs).
+
+---
+
+## 📖 Overview
+
+Deep learning models often require large and diverse datasets to achieve high performance. When training data is limited, **image augmentation** provides an effective solution by generating transformed versions of existing images, allowing the model to learn more robust and generalized features.
+
+This laboratory extends the computer vision workflow developed in **Lab 07** and **Lab 08** by introducing image augmentation techniques using **TensorFlow/Keras ImageDataGenerator**. Students will visualize augmented samples, train a CNN using the augmented dataset, and evaluate the model using standard classification metrics.
+
+The laboratory consists of two Jupyter notebooks covering both augmentation techniques and CNN training.
+
+---
+
+## 🎯 Learning Outcomes
+
+After completing this laboratory, students will be able to:
+
+- Understand the importance of image augmentation in deep learning
+- Apply image transformations using **ImageDataGenerator**
+- Generate diverse training samples through augmentation
+- Visualize augmented images
+- Train CNN models using augmented datasets
+- Improve model generalization and reduce overfitting
+- Monitor training and validation performance
+- Evaluate image classification models using confusion matrices and classification reports
+
+---
+
+# 🛠 Software & Libraries
+
+| Category | Tools |
+|-----------|-------|
+| Programming Language | Python |
+| Development Environment | Jupyter Notebook |
+| Numerical Computing | NumPy |
+| Data Visualization | Matplotlib, Seaborn |
+| Deep Learning Framework | TensorFlow, Keras |
+| Computer Vision | ImageDataGenerator |
+| Model Evaluation | Scikit-learn |
+| Model Saving | ModelCheckpoint (.h5) |
+
+---
+
+# 📚 Laboratory Exercises
+
+## 📌 Exercise 9.1 — Image Data Augmentation
+
+**Notebook:** `Lab_9_Part_01_22JZELE0480.ipynb`
+
+### Topics Covered
+
+- Importing image preprocessing libraries
+- Loading image datasets
+- Creating an `ImageDataGenerator`
+- Applying image transformations:
+  - Rescaling
+  - Rotation
+  - Width Shifting
+  - Height Shifting
+  - Shearing
+  - Zooming
+  - Horizontal Flipping
+- Visualizing augmented images
+- Understanding dataset diversity
+
+**Learning Focus**
+
+Learn how artificial image transformations increase dataset variability and improve CNN robustness without collecting additional data.
+
+---
+
+## 📌 Exercise 9.2 — CNN Training with Augmented Data
+
+**Notebook:** `Lab_9_Part_02_22JZELE0480.ipynb`
+
+### Topics Covered
+
+- Loading augmented datasets
+- Building a CNN architecture
+- Configuring training, validation, and testing generators
+- Compiling the CNN model
+- Training with augmented images
+- Saving the best-performing model
+- Visualizing training history
+- Predicting unseen images
+- Generating:
+  - Confusion Matrix
+  - Classification Report
+
+**Learning Focus**
+
+Train a CNN using augmented image data to improve model generalization and evaluate its performance on unseen samples.
+
+---
+
+# 🔍 Core Deep Learning Concepts
+
+## 📌 Image Augmentation
+
+Image augmentation generates multiple variations of existing images through geometric and visual transformations, increasing dataset diversity while preserving class labels.
+
+Common augmentation techniques include:
+
+- Rotation
+- Width & Height Shifting
+- Zooming
+- Shearing
+- Horizontal Flipping
+- Rescaling
+
+---
+
+## 📌 CNN Generalization
+
+A well-trained CNN should perform accurately on unseen images rather than memorizing the training dataset.
+
+Image augmentation helps improve generalization by exposing the model to a wider variety of image patterns and reducing overfitting.
+
+---
+
+## 📌 ImageDataGenerator
+
+`ImageDataGenerator` is a TensorFlow/Keras utility that loads images directly from folders while applying preprocessing and augmentation operations during training.
+
+---
+
+# 📂 Directory Structure
+
+```text
+Lab-09/
+│
+├── Lab_9_Part_01_22JZELE0480.ipynb
+├── Lab_9_Part_02_22JZELE0480.ipynb
+├── Computer vision/
+│
+└── README.md
+```
+
+---
+
+### Install Required Packages
+
+```bash
+pip install numpy matplotlib seaborn tensorflow keras scikit-learn
+```
+
+---
+
+### Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Run the notebooks in the following order:
+
+1. `Lab_9.1_22jzele0467.ipynb`
+2. `Lab_9.2_22jzele0467.ipynb`
+
+---
+
+# 📌 Skills Developed
+
+- Image Data Augmentation
+- Image Preprocessing
+- TensorFlow & Keras
+- ImageDataGenerator
+- Convolutional Neural Networks (CNNs)
+- Model Training
+- Model Generalization
+- Model Checkpointing
+- Confusion Matrix Analysis
+- Classification Report Interpretation
+
+---
+
+# 🌍 Practical Applications
+
+The techniques presented in this laboratory are widely used in:
+
+- 🌿 Plant Disease Detection
+- 🏥 Medical Image Classification
+- 🚗 Object Recognition
+- 🏭 Industrial Quality Inspection
+- 🌾 Smart Agriculture
+- 📷 Image-Based Monitoring Systems
+- 🤖 Computer Vision Applications
+- 🔬 Deep Learning Research
+
+---
+
+# 📈 Deep Learning Workflow
+
+```text
+Image Dataset
+      │
+      ▼
+Image Augmentation
+      │
+      ▼
+ImageDataGenerator
+      │
+      ▼
+CNN Training
+      │
+      ▼
+Model Evaluation
+      │
+      ▼
+Improved Generalization
+```
+
+---
+
+# 🎓 Course Information
+
+| Item | Details |
+|------|---------|
+| Course | Machine Learning Laboratory |
+| Lab | Lab 09 |
+| Topic | Image Data Augmentation & CNN Generalization |
+| Institution | UET Peshawar – Nowshera Campus |
+
+---
+
+# 👨‍💻 Author
+
+**IBRAHEEM KHAN**
+
+**Registration Number:** 22JZELE0467
+
+**Department:** Electrical Engineering
+
+**Course:** Machine Learning Laboratory
+
+**Supervisor:** Engr. Irshad Ullah
+
+**Institution:** University of Engineering & Technology (UET) Peshawar – Nowshera Campus
+
+---
+
+# 📄 Academic Note
+
+This laboratory was completed as part of the **Machine Learning Laboratory** course to develop practical skills in image augmentation and CNN training using TensorFlow and Keras. The techniques implemented in this lab improve model robustness and generalization, providing a strong foundation for advanced computer vision and deep learning applications.
+
+---
+
+# 📜 License
+
+This project is intended for **educational and research purposes**.
+
+You are welcome to use, modify, and extend the material for academic learning while providing appropriate credit to the original author.
+
+---
+
+## ⭐ Support
+
+If you found this laboratory helpful, consider giving the repository a **Star ⭐** on GitHub.
