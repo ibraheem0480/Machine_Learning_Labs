@@ -1,7 +1,229 @@
+# 🧠 Lab 08 – Convolutional Neural Network (CNN) Image Classification
 
-Lab 08 for the Machine Learning Lab course, focusing on building, optimizing, and evaluating deep learning models 
-for computer vision tasks. The workflow involves developing a custom Convolutional Neural Network (CNN) architecture 
-using Keras/TensorFlow, integrating sequential convolutional filtering, batch normalization, max-pooling, and dropout
-regularization layers to perform binary and multi-class classification on plant disease imagery, and thoroughly auditing
-the resulting model's classification dynamics using comprehensive evaluation matrices such as classification reports, precision,
-recall, and accuracy tracking scores.
+> **Machine Learning Laboratory** | Building, training, and evaluating a Convolutional Neural Network (CNN) for image classification using TensorFlow and Keras.
+
+---
+
+## 📖 Overview
+
+Convolutional Neural Networks (CNNs) are among the most widely used deep learning models for computer vision tasks. This laboratory focuses on designing and training a custom CNN for image classification using the dataset prepared in **Lab 07**.
+
+The workflow covers the complete deep learning pipeline, including loading image datasets, designing the CNN architecture, training the model, monitoring its performance, saving the best-performing model, and evaluating classification accuracy using performance metrics.
+
+The laboratory consists of a single Jupyter notebook implementing the complete image classification process.
+
+---
+
+## 🎯 Learning Outcomes
+
+After completing this laboratory, students will be able to:
+
+- Understand the architecture of Convolutional Neural Networks
+- Load image datasets using TensorFlow/Keras image generators
+- Design a custom CNN architecture
+- Compile and train deep learning models
+- Monitor training and validation performance
+- Save the best-performing model using callbacks
+- Evaluate classification performance on unseen data
+- Generate confusion matrices and classification reports
+- Visualize training history and model accuracy
+
+---
+
+# 🛠 Software & Libraries
+
+| Category | Tools |
+|-----------|-------|
+| Programming Language | Python |
+| Development Environment | Jupyter Notebook |
+| Numerical Computing | NumPy |
+| Data Visualization | Matplotlib, Seaborn |
+| Deep Learning Framework | TensorFlow, Keras |
+| Computer Vision | ImageDataGenerator |
+| Model Evaluation | Scikit-learn |
+| Model Saving | ModelCheckpoint (.h5) |
+
+---
+
+# 📚 Laboratory Exercise
+
+## 📌 Exercise 8 — CNN Model Training & Evaluation
+
+**Notebook:** `Lab_8_22JZELE0480.ipynb`
+
+### Topics Covered
+
+- Importing TensorFlow and Keras libraries
+- Loading training, validation, and testing datasets
+- Configuring ImageDataGenerator
+- Building a custom CNN architecture
+- Adding:
+  - Convolutional Layers (Conv2D)
+  - MaxPooling Layers
+  - Flatten Layer
+  - Dense Layers
+- Compiling the CNN model
+- Training the model
+- Saving the best model using ModelCheckpoint
+- Visualizing training and validation performance
+- Predicting unseen test images
+- Generating:
+  - Confusion Matrix
+  - Classification Report
+
+**Learning Focus**
+
+Develop a complete deep learning workflow for image classification, from model construction and training to evaluation and performance analysis.
+
+---
+
+# 🧠 CNN Architecture
+
+The implemented Convolutional Neural Network consists of the following components:
+
+- Input Image Layer
+- Convolutional Layers (Feature Extraction)
+- MaxPooling Layers (Dimensionality Reduction)
+- Flatten Layer
+- Fully Connected (Dense) Layers
+- Output Layer with Softmax Activation
+
+This architecture enables the model to automatically learn hierarchical image features such as edges, textures, patterns, and object shapes.
+
+---
+
+# 📂 Directory Structure
+
+```text
+Lab-08/
+│
+├── Lab_8_22ZJZELE0480.ipynb
+├── Computer vision/
+├── best_model.h5
+│
+└── README.md
+```
+
+
+
+---
+
+### Install Required Packages
+
+```bash
+pip install numpy matplotlib seaborn tensorflow keras scikit-learn
+```
+
+---
+
+### Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Run the notebook sequentially to build, train, and evaluate the CNN model.
+
+---
+
+# 📌 Skills Developed
+
+- Deep Learning
+- Convolutional Neural Networks (CNNs)
+- Image Classification
+- TensorFlow & Keras
+- ImageDataGenerator
+- Model Training
+- Model Evaluation
+- Confusion Matrix Analysis
+- Classification Report Interpretation
+- Model Checkpointing
+- Training Performance Visualization
+
+---
+
+# 🌍 Practical Applications
+
+The concepts covered in this laboratory are widely applied in:
+
+- 🌿 Plant Disease Detection
+- 🏥 Medical Image Diagnosis
+- 🚗 Autonomous Vehicle Vision
+- 🏭 Industrial Defect Detection
+- 📷 Face Recognition
+- 📄 Document Image Classification
+- 🌾 Smart Agriculture
+- 🤖 Artificial Intelligence Systems
+
+---
+
+# 📈 CNN Classification Workflow
+
+```text
+Prepared Image Dataset
+          │
+          ▼
+ImageDataGenerator
+          │
+          ▼
+Convolutional Neural Network
+          │
+          ▼
+Model Training
+          │
+          ▼
+Model Checkpoint
+          │
+          ▼
+Prediction
+          │
+          ▼
+Confusion Matrix & Classification Report
+```
+
+---
+
+# 🎓 Course Information
+
+| Item | Details |
+|------|---------|
+| Course | Machine Learning Laboratory |
+| Lab | Lab 08 |
+| Topic | Convolutional Neural Network (CNN) Image Classification |
+| Institution | UET Peshawar – Nowshera Campus |
+
+---
+
+# 👨‍💻 Author
+
+**IBRAHEEM KHAN**
+
+**Registration Number:** 22JZELE0480
+
+**Department:** Electrical Engineering
+
+**Course:** Machine Learning Laboratory
+
+**Supervisor:** Engr. Irshad Ullah
+
+**Institution:** University of Engineering & Technology (UET) Peshawar – Nowshera Campus
+
+---
+
+# 📄 Academic Note
+
+This laboratory was completed as part of the **Machine Learning Laboratory** course to develop practical skills in designing, training, and evaluating Convolutional Neural Networks for image classification tasks. The implementation provides a strong foundation for advanced computer vision and deep learning applications.
+
+---
+
+# 📜 License
+
+This project is intended for **educational and research purposes**.
+
+You are welcome to use, modify, and extend the material for academic learning while providing appropriate credit to the original author.
+
+---
+
+## ⭐ Support
+
+If you found this laboratory helpful, consider giving the repository a **Star ⭐** on GitHub.
